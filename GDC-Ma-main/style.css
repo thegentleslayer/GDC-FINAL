@@ -1,0 +1,766 @@
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: #626f92;
+}
+
+h1, p {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Pour centrer le texte horizontalement */
+    margin-top: 20px; /* Ajustez la marge supérieure selon vos besoins */
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    color: white;
+    background-color: #626f92;
+    
+}
+
+a {
+    color: inherit;
+    text-decoration: none; /* Optionnel : pour retirer les soulignements des liens */
+}
+
+
+#header header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #474168;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#header nav {
+    margin-left: 50px;
+    align-items: center;
+}
+
+#test2 {
+    align-items: right;
+    justify-content: right;
+}
+
+#header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#header nav ul li:last-child {
+    margin-right: 0;
+    margin-right: auto;
+}
+
+#header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 70px;
+    overflow: hidden; /* assurez-vous que le texte ne dépasse pas l'image */
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: auto;
+    max-width: 90%;
+    border: 1px solid transparent;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease; /* Ajoute une transition pour l'opacité */
+    animation: fadeInOut 2s infinite alternate; /* Animation pour ajouter de la dynamique */
+}
+
+#navigation:hover .img-overlay {
+    opacity: 1;
+    pointer-events: auto; /* Permet aux événements de pointer de passer à l'élément au survol */
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.img-overlay:hover {
+    border-color: white;
+}
+
+.img-overlay.hovered {
+    transform: translateX(-50%) translateY(-5px); /* Déplace légèrement vers le haut */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Ajoute une ombre */
+}
+
+
+
+.img-overlay p {
+    font-size: 18px; /* taille du texte */
+    font-weight: bold; /* poids de la police du texte */
+}
+
+#navigation img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+#navigation h1{
+    text-align: center;
+}
+
+footer {
+    background-color: #626f92;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 520px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    flex-wrap: wrap; /* Permettre le passage à la ligne */
+    padding: 10px 20px;
+}
+
+.legal {
+    flex-basis: auto; /* Prend autant de largeur que nécessaire */
+    margin-left: 20px; /* Marge à droite */
+}
+
+.copy-right li{
+    margin-bottom: 5px;
+    
+}
+
+.social-media {
+    margin-right: 0px; /* Mettre à droite */
+}
+
+.footer-content h4 {    
+    margin-top: 0; /* Supprime la marge supérieure des titres */
+}
+
+.footer-content ul {
+    padding-left: 0; /* Supprime le décalage à gauche de la liste */
+    margin-bottom: 10px; /* Ajoute un espace entre les listes */
+}
+
+.footer-content li {
+    margin-bottom: 5px; /* Espacement entre les éléments de la liste */
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Afficher les éléments en colonne sur les petits écrans */
+        align-items: center; /* Centrer verticalement sur les petits écrans */
+    }
+
+    .legal, .copy-right, .social-media {
+        margin: 10px 0; /* Ajouter de la marge en haut et en bas */
+    }
+
+    .social-media {
+        margin-left: 0; /* Supprimer la marge à gauche */
+        margin-top: auto; /* Mettre en bas */
+    }
+}
+
+/*PAGE GESTION DE CRISE */
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 800px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.card1 {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+
+.containers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    flex: 1; /* Utiliser une largeur flexible pour s'adapter à la taille du contenu */
+    max-width: calc(33.33% - 40px); /* Calculer la largeur maximale de chaque carte en tenant compte des marges */
+    text-align: center;
+    color: #333;
+}
+
+
+.red {
+    background-color: #FF6B6B;
+    height: 222px;
+}
+
+.orange {
+    background-color: #FFA94D;
+    height: 222px;
+}
+
+.yellow {
+    background-color: #FFD166;
+    height: 222px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.card ul li:before {
+    content: "\2022"; /* Utilisation du caractère de puce pour un point élégant */
+    color: #333; /* Couleur des puces */
+    font-size: 15px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; /* Ajustement pour aligner les puces */
+}
+
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1500px;
+}
+
+#content {
+    text-align: center; /* Centrer le contenu du conteneur */
+}
+
+
+
+.containers h2 {
+    margin-bottom: 20px; /* Ajouter de l'espace en dessous du titre */
+    color: white;
+}
+
+.containers p {
+    color: white;
+}
+
+#content .description {
+    margin-bottom: 40px; /* Ajouter plus d'espace en dessous de la description */
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.card2 {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+    max-width: calc(33.33% - 40px);
+    text-align: center;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card2:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card2 h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+
+}
+
+.card2 p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.card2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card2 ul li {
+    margin-bottom: 10px;
+}
+
+.card2 ul li:before {
+    content: "\2022";
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1500px;
+}
+
+.red {
+    background-color: #FF6B6B;
+    
+}
+
+.orange {
+    background-color: #FFA94D;
+    height:218px;
+}
+
+.yellow {
+    background-color: #FFD166;
+}
+
+
+#content3 {
+    text-align: center;
+    padding: 20px;
+}
+
+#content3 h2 {
+    margin-bottom: 20px;
+}
+
+#content3 .description {
+    margin-bottom: 40px;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1500px;
+}
+
+.card3 {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+    max-width: calc(33.33% - 40px);
+    text-align: center;
+    color: #333;
+    background-color: #FF6B6B;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    height: 315px;
+}
+
+.card3:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card3 h2 {
+    margin-bottom: 10px;
+}
+
+.card3 p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.card3 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card3 ul li {
+    margin-bottom: 10px;
+}
+
+.card3 ul li:before {
+    content: "\2022";
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.red {
+    background-color: #FF6B6B;
+}
+
+.orange3 {
+    background-color: #FFA94D;
+    height: 311px;
+}
+
+.yellow3 {
+    background-color: #FFD166;
+    height: 311px;
+}
+
+.contact-list {
+    text-align: center;
+    background-color: #25142D;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.contact-list p {
+    margin: 0;
+}
+
+.contact-list a {
+    color: #FF6B6B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* */
+
+#content4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card4 {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+    max-width: calc(50% - 40px);
+    text-align: center;
+    color: #333;
+    background-color: #FFD166;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    height: 300px;
+}
+
+
+.card4bis {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+    max-width: calc(50% - 40px);
+    text-align: center;
+    color: #333;
+    background-color: #FFD166;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    height: 300px;
+}
+
+
+.card4:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card4 h2 {
+    margin-bottom: 10px;
+
+}
+
+.card4 p {
+    margin-bottom: 20px;
+}
+
+.card4 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card4 ul li {
+    margin-bottom: 10px;
+}
+
+.card4 ul li:before {
+    content: "\2022";
+    color: black;
+    font-size: 15px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.situation {
+    background-color: #FFD166;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.situation.rouge {
+    border: 2px solid white;
+    height: 1050px;
+}
+
+.situation.orange {
+    border: 2px solid white;
+    height: 1050px;
+}
+
+.situation.jaune {
+    border: 2px solid white;
+    height: 1050px;
+}
+
+.correctifs {
+    margin-top: 10px;
+}
+
+.correctifs p {
+    margin-bottom: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alignement des éléments en haut */
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+.situation {
+    width: 300px; /* Largeur fixe pour chaque section */
+}
+
+/* Le reste du CSS reste inchangé */
+
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    max-width: 1500px;
+    margin-top: 40px;
+}
+
+.step {
+    background-color: #FFD166;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    height: 445px;
+}
+
+.stepbis {
+    background-color: #FFD166;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    height: 445px;
+}
+
+h2 {
+    color: white;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Styles de base */
+
+/* Media queries pour les écrans de petite taille (smartphones) */
+@media only screen and (max-width: 600px) {
+    /* Modifier le style de la navigation pour qu'elle s'affiche verticalement */
+    #header nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px; /* Ajoutez de l'espace entre les éléments */
+    }
+
+    /* Modifier la taille des cartes pour qu'elles s'adaptent à la largeur de l'écran */
+    .card1, .card2, .card3, .card4, .card4bis {
+        width: 100%; /* Les cartes prennent toute la largeur */
+        margin: 10px 0; /* Ajoutez de l'espace autour des cartes */
+    }
+}
+
+/* Media queries pour les écrans de taille moyenne (tablettes) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Ajoutez vos styles CSS ici pour les tablettes */
+}
+
+/* Media queries pour les écrans de grande taille (ordinateurs de bureau) */
+@media only screen and (min-width: 1025px) {
+    /* Ajoutez vos styles CSS ici pour les ordinateurs de bureau */
+}
+
+.footer-content-2 {
+    max-width: 1200px;
+    margin: 20px auto; 
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    flex-wrap: wrap; /* Permettre le passage à la ligne */
+    padding: 10px 10px;
+    position: relative;
+}
+
+.copy {
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.centeredp {
+    text-align: center;
+    max-width: 980px; /* Limite la largeur du paragraphe */
+    color: white;
+    transform: translate(26%, -50%);
+    margin-top: 40px;
+}
+
+/* CARTO */
+
+.image-carto img {
+    height: 700px;
+    width: auto;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    display: block;
+    margin: 0 auto; /* Centrer horizontalement */
+      
+}
+
+/* contact */
+
+#navigationcon{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+#contact {
+    border: 2px solid #FFD166;
+    background-color: #FFD166;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 20px;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+}
