@@ -1,0 +1,84 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Conteneur principal */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Titre */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Groupes de champs */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Champs de saisie */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Zone de texte */
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Groupes de cases à cocher */
+.checkbox-group label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+/* Bouton */
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Message de réponse */
+#responseMessage {
+    text-align: center;
+    margin-top: 10px;
+    color: #28a745;
+}

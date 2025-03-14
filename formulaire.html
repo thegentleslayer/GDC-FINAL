@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Devis - Jardin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Demande de Devis</h2>
+        <form id="quoteForm">
+            <!-- Informations Générales -->
+            <div class="form-group">
+                <label>Nom & Prénom</label>
+                <input type="text" id="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+                <label>Téléphone</label>
+                <input type="tel" id="phone" placeholder="Votre numéro" required>
+            </div>
+            <div class="form-group">
+                <label>Adresse</label>
+                <input type="text" id="address" placeholder="Adresse d'intervention" required>
+            </div>
+
+            <!-- Services -->
+            <div class="form-group">
+                <label>Services souhaités</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="services" value="Piscine"> Entretien de piscine</label>
+                    <label><input type="checkbox" name="services" value="Taille & Tonte"> Taille & Tonte</label>
+                    <label><input type="checkbox" name="services" value="Ramassage de feuilles"> Ramassage de feuilles</label>
+                    <label><input type="checkbox" name="services" value="Débroussaillage"> Débroussaillage</label>
+                </div>
+            </div>
+
+            <!-- Fréquence -->
+            <div class="form-group">
+                <label>Fréquence souhaitée</label>
+                <select id="frequency">
+                    <option value="unique">Intervention unique</option>
+                    <option value="hebdomadaire">Hebdomadaire</option>
+                    <option value="mensuelle">Mensuelle</option>
+                    <option value="autre">Autre</option>
+                </select>
+            </div>
+
+            <!-- Commentaires -->
+            <div class="form-group">
+                <label>Commentaires</label>
+                <textarea id="comments" placeholder="Détails supplémentaires..."></textarea>
+            </div>
+
+            <!-- Bouton d'envoi -->
+            <button type="submit">Envoyer la demande</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
